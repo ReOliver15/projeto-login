@@ -65,6 +65,7 @@ div#formulario > p {
 
 form > div.campo {
     background-color: #5A7E8C;
+    border: 2px solid #5A7E8C;
     display: block;
     width: 100%;
     height: 40px;
@@ -74,6 +75,28 @@ form > div.campo {
 
 div.campo > label {
     display: none;
+}
+div.campo > span {
+    color: #012840;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px); /*CSS fazendo calculo*/
+    transform: translateY(-12px);
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+}
+div.campo > input:focus-within { /* Quando vc for digitar o campo fica branco */
+    background-color: white;
+    border: none;
 }
 
 /* Estilização do input e do link a */
