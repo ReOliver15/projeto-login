@@ -13,7 +13,7 @@
 }
 
 body, html {
-    background-color: #5A7E8C;
+    background-color: #5A7E8C; /*cor fundo do celular*/
     height: 100vh;
     width: 100vw;
 }
@@ -31,8 +31,8 @@ section#login {
     transform: translate(-50%, -50%);
     overflow: hidden; /*Tudo que ficar fora da borda via se esconder, aqui vai arredondar os cantos*/
     background-color: whitesmoke;
-    width: 250px; /*Tela de ceular*/
-    height: 500px;
+    width: 260px; /*Tela de ceular*/
+    height: 525px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
 
@@ -63,12 +63,25 @@ div#formulario > p {
     font-size: 1em;
 }
 
+form > div.campo {
+    background-color: #5A7E8C;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px; /*margem em cima e baixo: 5. margem lados: 0*/
+}
+
+div.campo > label {
+    display: none;
+}
+
 /* Estilização do input e do link a */
 
 form > input[type=submit] { 
     display: block; /*Um botão embaixo do outro*/
     font-size: 1em;
-    width: 100%; /*vw é a largura total, usaremos 100% do container*/
+    width: 100%; /*vw é a largura total da div, usaremos 100% do container*/
     height: 40px;
     background-color: #49a09d;
     color: white;
@@ -90,10 +103,14 @@ form > a.botao {
     padding-top: 5px;
     margin-top: 5px;
     color: #012840;
-    background-color: #57b9b6;
+    background-color: white;
     border: 1px solid #49a09d;
     border-radius: 5px;
     text-decoration: none;
+}
+
+form a.botao:hover {
+    background-color: #57b9b6;
 }
 
 form > a.botao > i {
