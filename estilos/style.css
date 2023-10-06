@@ -2,7 +2,7 @@
 /* Começamos com o Mobile First
     Paleta de cores
     Verde: #49a09d
-    Roxo: #5f2c82
+    Azul-Escuro: #012840
 */
 
 * {
@@ -13,7 +13,7 @@
 }
 
 body, html {
-    background-color: #5f2c82;
+    background-color: #5A7E8C;
     height: 100vh;
     width: 100vw;
 }
@@ -37,12 +37,12 @@ section#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
 
     transition: width .3s, height .3s;
-    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/paulista.jpg) no-repeat;
+    background: #D93B48 url(../imagens/paulista.jpg) no-repeat;
     background-size: cover;
     background-position: bottom center;
     height: 200px;
